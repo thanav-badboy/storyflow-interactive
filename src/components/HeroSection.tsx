@@ -54,14 +54,22 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.h1
-          className="text-5xl md:text-7xl lg:text-9xl font-display font-black text-foreground leading-none text-glow-cyan"
+          className="text-5xl md:text-7xl lg:text-9xl font-display font-black leading-none"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 1 }}
         >
-          Into the
+          <span className="text-foreground drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">Into the</span>
           <br />
-          <span className="text-primary">Abyss</span>
+          <span
+            className="bg-gradient-to-r from-primary via-accent to-bio-cyan bg-clip-text text-transparent drop-shadow-lg"
+            style={{
+              textShadow: "0 0 40px hsl(185 100% 65% / 0.6), 0 0 80px hsl(165 90% 45% / 0.3), 0 0 120px hsl(185 100% 65% / 0.15)",
+              WebkitTextStroke: "1px hsl(185 100% 65% / 0.1)",
+            }}
+          >
+            Abyss
+          </span>
         </motion.h1>
 
         <motion.p
